@@ -17,10 +17,21 @@ public abstract class LabActivity {
 
     public void startActivity() {
         this.status = "RUNNING";
+        this.startTime = java.time.LocalTime.now().toString();
     }
 
     public void endActivity() {
         this.status = "COMPLETED";
+        this.endTime = java.time.LocalTime.now().toString();
+    }
+
+    public abstract void runSimulation() throws InvalidParameterException, SimulationException;
+
+    public abstract String calculateResults();
+
+    public void displayResults() {
+        System.out.println("[" + activityId + "] " + activityName + " (" + status + ") ");
+        System.out.println(calculateResults());
     }
 
     public String getActivityId() { return activityId; }
