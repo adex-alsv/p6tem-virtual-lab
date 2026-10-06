@@ -7,7 +7,7 @@ public abstract class LabActivity {
     protected String status;
     protected int maxDurationMinutes;
 
-    public LabActivity(String activityID, String activityName, String description, String startTime, String endTime, String status, int maxDurationMinutes) {
+    public LabActivity(String activityID, String activityName, String description, int maxDurationMinutes) {
         this.activityId = activityID;
         this.activityName = activityName;
         this.description = description;
