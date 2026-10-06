@@ -102,10 +102,10 @@ classDiagram
 - [x] InvalidParameterException
 - [x] SimulationException
 - [x] CircuitType
-- [ ] LabActivity
-- [ ] MechanicsExperiment
-- [ ] ProjectileMotionExperiment
-- [ ] CircuitExperiment
+- [x] LabActivity
+- [x] MechanicsExperiment
+- [x] ProjectileMotionExperiment
+- [x] CircuitExperiment
 - [ ] CSVExperimentLoader
 - [ ] VirtualLab
 
