@@ -17,6 +17,11 @@ public class CircuitExperiment extends LabActivity {
         if (voltage < 0) {
             throw new InvalidParameterException("voltage", "Voltage cannot be negative.");
         }
+        for (double r : resistances) {
+            if (r < 0) {
+                throw new InvalidParameterException("resistances", "Resistance cannot be negative.");
+            }
+        }
 
         switch (circuitType) {
             case SERIES -> {
