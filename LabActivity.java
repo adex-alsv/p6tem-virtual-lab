@@ -36,5 +36,5 @@ public abstract class LabActivity {
 
     public String getActivityId() { return activityId; }
     public String getActivityName() { return activityName; }
-    public String getDescription() { return description; }
+    public String getStatus() { return status; }
 }
