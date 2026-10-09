@@ -28,7 +28,7 @@ public class ProjectileMotionExperiment extends MechanicsExperiment {
 
         timeOfFlightResult = (vy + Math.sqrt(vy * vy + 2 * gravity * initialHeight)) / gravity;
         rangeResult = vx * timeOfFlightResult;
-        maxHeightResult = initialHeight + (vy + vy) / (2 * gravity);
+        maxHeightResult = initialHeight + (vy * vy) / (2 * gravity);
     }
 
     @Override
