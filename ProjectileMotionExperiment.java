@@ -33,6 +33,6 @@ public class ProjectileMotionExperiment extends MechanicsExperiment {
 
     @Override
     public String calculateResults() {
-        return "Time of Flight = " + timeOfFlightResult + " s, " + "Range = " + rangeResult + " m, " + "Max Height = " + maxHeightResult + " m";
+        return String.format("Time of Flight = %.2f s, Range = %.2f m, Max Height = %.2f m", timeOfFlightResult, rangeResult, maxHeightResult);
     }
 }

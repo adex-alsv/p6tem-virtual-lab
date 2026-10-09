@@ -42,6 +42,6 @@ public class CircuitExperiment extends LabActivity {
 
     @Override
     public String calculateResults() {
-        return "Total Resistance = " + totalResistance + " ohm, Current = " + current + " A";
+        return String.format("Total Resistance = %.2f ohm, Current = %.2f A", totalResistance, current);
     }
 }
