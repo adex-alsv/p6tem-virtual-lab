@@ -1,7 +1,7 @@
 public class MechanicsExperiment extends LabActivity {
     protected double mass;
     protected double gravity;
-    private double weightResults;
+    private double weightResult;
 
     public MechanicsExperiment(String activityID, String activityName, String description, int maxDurationMinutes, double mass, double gravity) {
         super(activityID, activityName, description, maxDurationMinutes);
@@ -19,6 +19,6 @@ public class MechanicsExperiment extends LabActivity {
 
     @Override
     public String calculateResults() {
-        return "Weight = " + weightResults + " N";
+        return String.format("Weight = %.2f N", weightResult);
     }
 }
