@@ -16,7 +16,7 @@ public class CSVExperimentLoader {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String headerLine = reader.readLine();
-            if (haederLine == null) {
+            if (headerLine == null) {
                 System.out.println("[Error] CSV file is empty.");
                 return activities;
             }

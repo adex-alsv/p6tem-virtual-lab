@@ -11,7 +11,7 @@ public class MechanicsExperiment extends LabActivity {
 
     @Override
     public void runSimulation() throws InvalidParameterException {
-        if (max <= 0) {
+        if (mass <= 0) {
             throw new InvalidParameterException("mass", "Mass must be greater than 0.");
         }
         weightResults = mass * gravity;
