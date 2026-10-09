@@ -1,0 +1,8 @@
+type,activityId,activityName,description,maxDurationMinutes,mass,gravity,initialVelocity,launchAngle,initialHeight,voltage,resistances,circuitType
+MECHANICS,M001,Weight Test,Weight of a 10 kg object,5,10,9.81,,,,,,
+PROJECTILE,P001,Cannon Shot,Projectile launched at 45 degrees,5,2,9.81,20,45,0,,,
+CIRCUIT,C001,Series Circuit,Three resistors in series,5,,,,,,12,10;20;30,SERIES
+CIRCUIT,C002,Parallel Circuit,Two resistors in parallel,5,,,,,,12,10;20,PARALLEL
+CIRCUIT,C003,Short Circuit Test,Zero-ohm resistor in parallel,5,,,,,,12,0;10,PARALLEL
+PROJECTILE,P002,Bad Angle,Launch angle out of range,5,2,9.81,20,120,0,,,
+CIRCUIT,C004,Bad Type,Invalid circuit type,5,,,,,,12,10;20,MIXED
