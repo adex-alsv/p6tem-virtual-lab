@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map; 
 
 public class CSVExperimentLoader {
-    // Header : type,activityId,activityNAme,descriptiono,maxDurationMinutes,mass,gravity,initialVelocity,launchAngle,initialHeight,voltage,resistances,circuitType
+    // Header : type,activityId,activityNAme,description,maxDurationMinutes,mass,gravity,initialVelocity,launchAngle,initialHeight,voltage,resistances,circuitType
     // Unused colums for a given type are left blank. resistances uses ";" to seperate values.
 
     public List<LabActivity> loadFromCSV(String filePath) {
